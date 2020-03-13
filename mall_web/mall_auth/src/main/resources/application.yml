@@ -1,0 +1,23 @@
+server:
+  port: 8084
+
+dubbo:
+  application:
+    name: mall_auth
+  registry:
+    address: zookeeper://192.168.32.188:2181
+  consumer:
+    check: false
+    timeout: 10000
+    retries: 0
+
+spring:
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.32.188
+    username: guest
+    password: guest
+    virtual-host: /
+  redis:
+    host: 192.168.32.188

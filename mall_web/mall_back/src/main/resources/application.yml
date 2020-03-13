@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  thymeleaf:
+    cache: false
+dubbo:
+  application:
+    name: mall_back
+  consumer:
+    check: false
+  registry:
+    address: zookeeper://192.168.32.188:2181
+  protocol:
+    port: -1
+
+fdfs:
+  pool:
+    jmx-enabled: false
+  thumb-image:
+    width: 100
+    height: 100
+  tracker-list:
+    - 192.168.32.188:22122

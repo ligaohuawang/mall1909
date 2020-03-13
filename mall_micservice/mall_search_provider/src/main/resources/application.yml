@@ -1,0 +1,21 @@
+dubbo:
+  application:
+    name: mall_search_provider
+  consumer:
+    check: false
+  registry:
+    address: zookeeper://192.168.32.188:2181
+  protocol:
+    port: -1
+
+spring:
+  data:
+    solr:
+      host: http://192.168.32.188:8983/solr/mycollection
+
+  rabbitmq:
+    host: 192.168.32.188
+    username: guest
+    password: guest
+    virtual-host: /
+    port: 5672

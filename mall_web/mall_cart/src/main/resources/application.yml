@@ -1,0 +1,21 @@
+server:
+  port: 8085
+
+spring:
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.32.188
+
+
+dubbo:
+  application:
+    name: mall_cart
+  registry:
+    address: zookeeper://192.168.32.188:2181
+  consumer:
+    check: false
+    timeout: 10000
+    retries: 0
+  protocol:
+    port: -1

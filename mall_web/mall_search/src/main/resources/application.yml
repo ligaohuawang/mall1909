@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  thymeleaf:
+    cache: false
+
+dubbo:
+  registry:
+    address: zookeeper://192.168.32.188:2181
+  consumer:
+    check: false
+  application:
+    name: mall_search
+  protocol:
+    port: -1
